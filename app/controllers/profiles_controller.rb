@@ -27,8 +27,7 @@ class ProfilesController < ApplicationController
     def update
        @user = User.find( params[:user_id] )
        @profile = @user.profile
-        if @profile.update_attributes(profile_params
-       )
+        if @profile.update_attributes(profile_params)
             flash[:success] = "Profile Updated!"
             redirect_to user_path( params[:user_id] )
         else
@@ -43,6 +42,6 @@ class ProfilesController < ApplicationController
         
         def only_current_user
             @user = User.find( params[:user_id] )
-            redirect_to unless @user == current_user
+            redirect_to(root_url) unless @user == current_user
         end
 end
