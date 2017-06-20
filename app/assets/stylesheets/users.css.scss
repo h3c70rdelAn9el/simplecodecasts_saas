@@ -1,5 +1,5 @@
 /* Users show page styles */
-user-show-avatar {
+.user-show-avatar {
     height: 128 px;
     width: 128 px;
 }
@@ -34,11 +34,17 @@ user-show-avatar {
 
 .user-index-avatar {
     border-radius: 50%;
+}
+
+
+/* Users index page styles */
+
+.user-index-avatar {
+    border-radius: 50%;
     height: 128 px;
     width: 128 px;
 }
 
-/* Users index page styles */
 .profile-image {
     border-radius: 50%;
 }
